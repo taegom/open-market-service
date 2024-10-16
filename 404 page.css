@@ -1,0 +1,77 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.error-page {
+  margin-top: 342px;
+  margin-left: 590px;
+  display: flex;
+}
+
+.error-info {
+  margin-left: 50px;
+}
+
+.error-main {
+  margin-top: 16px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.error-script {
+  width: 371px;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.03px;
+  text-align: left;
+  color: rgba(118, 118, 118, 1);
+}
+
+.move-button {
+  margin-top: 40px;
+  font-size: 0;
+  text-align: center;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.gomain-button {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(33, 191, 72, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gomain-button:hover {
+  background-color: green;
+}
+
+.goprev-button {
+  width: 200px;
+  height: 60px;
+  margin-left: 14px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(118, 118, 118, 1);
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.goprev-button:hover {
+  background-color: cornsilk;
+}
