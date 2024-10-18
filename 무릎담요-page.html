@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>무릎담요 상세페이지</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./무릎담요-page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        <img
+          src="./images/Logo-hodu.png"
+          alt="HODU 로고"
+          style="width: 124px"
+        />
+      </h1>
+
+      <input
+        type="text"
+        placeholder="상품을 검색해보세요!"
+        class="search-bar"
+      />
+
+      <div class="header-icon">
+        <a href="#" class="baguni"
+          ><img src="./images/icon-shopping-cart.svg" alt="장바구니" />
+        </a>
+        <span>장바구니</span>
+        <a href="#" class="login-icon"
+          ><img src="./images/icon-user.svg" alt="마이페이지"
+        /></a>
+        <span>마이페이지</span>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <div class="product-image">
+        <img src="./images/무릎 담요 상세.png" alt="무릎 담요" />
+      </div>
+      <div class="product-info">
+        <p class="seller-name">백엔드글로벌</p>
+        <p class="product-name">딥러닝 개발자 무릎 담요</p>
+        <p class="product-price">
+          17,500 <span class="product-price2">원</span>
+        </p>
+
+        <div class="product-shipping">
+          <p>택배배송 / 무료배송</p>
+        </div>
+
+        <div class="product-quantity">
+          <button class="quantity-minus">-</button>
+          <input type="text" value="1" min="1" class="quantity" />
+          <button class="quantity-plus">+</button>
+        </div>
+
+        <div class="product-total">
+          <p class="total">총 상품 금액</p>
+          <p class="total-quantity">
+            총 수량 <span class="quantity-span">$</span>개
+          </p>
+          <span class="total-bar">|</span>
+          <p class="total-price">17,500 <span class="price-span">원</span></p>
+        </div>
+
+        <div class="product-button">
+          <button class="buy-button">바로 구매</button>
+          <button class="addcart-button">장바구니</button>
+        </div>
+      </div>
+    </main>
+
+    <section class="menu-tab">
+      <nav>
+        <button class="menu-button">버튼</button>
+        <button class="menu-button">리뷰</button>
+        <button class="menu-button">Q&A</button>
+        <button class="menu-button">반품/교환정보</button>
+      </nav>
+    </section>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

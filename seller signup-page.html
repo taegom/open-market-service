@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODU 회원가입</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./seller signup-page.css" />
+  </head>
+  <body>
+    <!-- 로고 -->
+    <img src="./images/Logo-hodu.png" alt="HODU 로고" class="logo" />
+
+    <!-- 회원가입 종류 -->
+    <div class="tab-container">
+      <button class="tab-button active">구매회원가입</button>
+      <button class="tab-button">판매회원가입</button>
+    </div>
+
+    <!-- 회원가입 컨테이너 -->
+    <div class="signup-container">
+      <div class="signup-form" id="buyer-signup">
+        <label class="signup-list">아이디</label>
+        <input type="text" class="input-id" />
+        <button class="repetition-check">중복확인</button>
+
+        <label class="signup-list">비밀번호</label>
+        <input type="password" class="input-field" />
+
+        <label class="signup-list">비밀번호 재확인</label>
+        <input type="password" class="input-field" />
+        <label class="signup-list" id="name-margin">이름</label>
+        <input type="text" class="input-field" />
+
+        <label class="signup-list">휴대폰번호</label>
+        <input
+          list="phone-number"
+          id="input-phone1"
+          name="phone-number-choice"
+        />
+        <datalist id="phone-number">
+          <option value="010"></option>
+          <option value="011"></option>
+          <option value="016"></option>
+          <option value="017"></option>
+          <option value="019"></option>
+        </datalist>
+        <input type="tel" class="input-phone2" />
+        <input type="tel" class="input-phone3" />
+
+        <label class="signup-list" id="business-number">사업자 등록번호</label>
+        <input type="text" class="business-number" />
+        <button class="repetition-check">인증</button>
+
+        <label class="signup-list">스토어 이름</label>
+        <input type="text" class="input-field" />
+      </div>
+    </div>
+
+    <div class="notification-container">
+      <input
+        type="checkbox"
+        name="notification"
+        id="notification"
+        class="checkbox"
+      />
+      <label for="notification"></label>
+      <label for="notification" class="notification">
+        호두샵의 <span class="text-line">이용약관</span> 및
+        <span class="text-line">개인정보처리방침</span>에 대한 내용을 확인하였고
+        동의합니다.
+      </label>
+    </div>
+    <button class="signup-button">가입하기</button>
+
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

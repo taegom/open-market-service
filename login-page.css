@@ -1,0 +1,151 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 238px;
+  height: 74px;
+  margin-top: 100px;
+}
+
+.tab-container {
+  display: flex;
+  margin-top: 70px;
+  width: 550px;
+  height: 80px;
+  line-height: 22px;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 1);
+  transform: translateY(20px);
+}
+
+.tab-button.active {
+  position: relative;
+  width: 275px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 15px;
+  z-index: 3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.tab-button {
+  position: relative;
+  width: 275px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(242, 242, 242, 1);
+  cursor: pointer;
+  padding-bottom: 15px;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.login-container {
+  position: relative;
+  width: 550px;
+  height: auto;
+  padding: 0 35px 36px 35px;
+  border: 1px solid #c4c4c4;
+  border-top: none;
+  border-radius: 0 10px 10px 10px;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.input-field1,
+.input-field2 {
+  width: 480px;
+  padding-bottom: 19px;
+  border: none;
+  border-bottom: 1px solid rgba(196, 196, 196, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.03px;
+  text-align: left;
+  height: 60px;
+}
+
+.input-field1 {
+  margin-top: 34px;
+}
+
+.error-message {
+  display: none;
+  color: rgba(235, 87, 87, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.03px;
+  text-align: left;
+  margin-top: 26px;
+  margin-bottom: -10px;
+}
+
+.login-button {
+  background-color: rgba(33, 191, 72, 1);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.login-button:hover {
+  background-color: #27a878;
+}
+
+.error-message {
+  text-align: left;
+  margin-top: 26px;
+}
+
+.links {
+  margin-top: 30px;
+}
+
+.links a {
+  color: rgba(51, 51, 51, 1);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.03px;
+  text-align: left;
+}
+
+
