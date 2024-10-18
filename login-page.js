@@ -18,10 +18,27 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // 하드코딩된 로그인 정보 체크
+    if (username === "jejucoding" && password === "Weniv123!") {
+      alert("로그인 성공!");
+
+      // 활성화된 탭 확인
+      const activeTab = document.querySelector(".tab-button.active");
+      if (activeTab.textContent.includes("구매회원")) {
+        window.location.href = "http://127.0.0.1:5500/buyer-page.html"; // 구매회원 페이지로 이동
+      } else if (activeTab.textContent.includes("판매회원")) {
+        window.location.href = "http://127.0.0.1:5500/seller-page.html"; // 판매회원 페이지로 이동
+      }
+      return;
+    }
+
+    // 서버 요청 (예시: 실제 서버와의 통신)
     try {
       const response = await fetch("http://127.0.0.1:5500/login-page.html", {
         method: "POST",
-
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ username, password }),
       });
 
@@ -29,7 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (response.ok) {
         alert("로그인 성공!");
-        window.location.href = document.referrer;
+
+        // 활성화된 탭 확인
+        const activeTab = document.querySelector(".tab-button.active");
+        if (activeTab.textContent.includes("구매회원")) {
+          window.location.href = "http://127.0.0.1:5500/buyer-page.html"; // 구매회원 페이지로 이동
+        } else if (activeTab.textContent.includes("판매회원")) {
+          window.location.href = "http://127.0.0.1:5500/seller-page.html"; // 판매회원 페이지로 이동
+        }
       } else {
         showError("아이디 또는 비밀번호가 일치하지 않습니다.");
         passwordInput.value = "";
@@ -48,9 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     errorMessage.style.display = "block";
   }
 });
-
-const buyertap = document.querySelector(".tab-button.active");
-const sellertap = document.querySelector(".tab-button");
 
 // 탭 버튼들
 const tabButtons = document.querySelectorAll(".tab-button");

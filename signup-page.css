@@ -230,11 +230,24 @@ input {
   background-color: gray;
 }
 
-.error-message {
+.idfailure-message,
+.pwfailure-message,
+.error-message,
+.required-message {
   display: none;
   color: rgba(235, 87, 87, 1);
   font-size: 16px;
   font-weight: 400;
   line-height: 20.03px;
   text-align: left;
+  margin-top: 10px;
+}
+
+#pwcheck,
+#pwcheck2 {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 97%;
+  background-size: 28px;
 }
